@@ -6,7 +6,6 @@ body {
 
 ul {
   display: flex;
-  border-radius: 25px;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
@@ -21,7 +20,7 @@ ul a {
   align-self: center;
   color: #C6AC8F;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 30px;
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -42,26 +41,22 @@ ul a:hover {
   align-self: center;
   color: #C6AC8F;
   text-decoration: none;
-  font-size: 25px;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  float: left;
+  font-size: 30px;
+  padding-right: 30px;
 }
 
 .dropdown-content {
   display: none;
+  border-radius: 10px;
+  text-align: center;
   position: fixed;
   background-color: #EAE0D5;
-  min-width: 200px;
-  padding-right: 400px;
+  width: 195px;
+  height: auto;
 }
 
 .dropdown-content a:hover {
+  align-self: center;
   background-color: #C6AC8F;
   color: #5E503F;
 }
