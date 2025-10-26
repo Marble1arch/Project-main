@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(152, 251, 152);
+  background-color: #C6AC8F;
   margin: 0;
   padding: 0;
 }
@@ -9,16 +9,17 @@ ul {
   border-radius: 25px;
   justify-content: space-between;
   flex-direction: row;
-  align-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgb(50, 205, 50);
+  background-color: #5E503F;
+  padding-right: 10px;
 }
 
 ul a {
   align-self: center;
-  color: black;
+  color: #C6AC8F;
   text-decoration: none;
   font-size: 25px;
   padding-left: 25px;
@@ -26,12 +27,45 @@ ul a {
 }
 
 ul a:hover {
-  background-color: rgb(50, 72, 153);
+  background-color: #EAE0D5;
   border-radius: 10px;
+  color: #5E503F;
 }
 
 .f1 {
   padding-left: 25px;
   text-align: center;
-  color: black;
+  color: #C6AC8F;
+}
+
+.dropbtn {
+  align-self: center;
+  color: #C6AC8F;
+  text-decoration: none;
+  font-size: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  float: left;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #EAE0D5;
+  min-width: 200px;
+  padding-right: 400px;
+}
+
+.dropdown-content a:hover {
+  background-color: #C6AC8F;
+  color: #5E503F;
+}
+
+.dropdown.dropdown:hover .dropdown-content {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

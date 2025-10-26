@@ -1,6 +1,9 @@
 $color:	rgb(50, 205, 50);
+$color1: #EAE0D5;
+$color2:#C6AC8F;
+$color3:#5E503F;
 body{
-    background-color: rgb(152, 251, 152);
+    background-color: $color2;
      margin: 0;
   padding: 0;
 }
@@ -9,27 +12,57 @@ ul {
     border-radius: 25px;
     justify-content: space-between;
     flex-direction: row;
-    align-content: center;
+    align-items: center;
     margin:0;
     padding:0;
     overflow: hidden;
-    background-color: $color;
+    background-color: $color3;
+    padding-right:10px;
 }
 ul a{
     align-self: center;
-    color:black;
+    color:$color2;
     text-decoration: none;
     font-size:25px;
     padding-left:25px;
     padding-right:25px;
 }
 ul a:hover {
-  background-color:rgb(50, 72, 153);
+  background-color:$color1;
   border-radius: 10px;
+  color: $color3;
 }
 
 .f1{
     padding-left:25px;
     text-align: center;
-    color:black;
+    color:$color2;
+}
+
+.dropbtn {
+ align-self: center;
+    color:$color2;
+    text-decoration: none;
+    font-size:25px;
+    padding-left:25px;
+    padding-right:25px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  float:left;
+}
+.dropdown-content {
+    display:none;
+  position: fixed;
+  background-color: $color1;
+  min-width: 200px;
+  padding-right:400px;
+}
+.dropdown-content a:hover {
+  background-color: $color2;
+  color: $color3;
+}
+.dropdown.dropdown:hover .dropdown-content {
+  display: block;
 }
