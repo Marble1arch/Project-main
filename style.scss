@@ -27,14 +27,8 @@ a:hover{
       color:$color1;
     }
 }
-#jew img:last-child{
-  display:none;
-}
-.dark-mode img:first-child{
-  display:none;
-}
-.dark-mode img:last-child{
-  display:block; 
+#jew img{
+  fill:$color4;
 }
 }
 
@@ -118,9 +112,9 @@ a{
 #jew img:last-child{
   display:none;
 }
-.dark-mode img:first-child{
+.darkmode #jew img:first-child{
   display:none;
 }
-.dark-mode img:last-child{
+.darkmode #jew img:last-child{
   display:block; 
 }

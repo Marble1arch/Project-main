@@ -23,14 +23,8 @@ body {
 .darkmode .dropdown-content a {
   color: #EAE0D5;
 }
-.darkmode #jew img:last-child {
-  display: none;
-}
-.darkmode .dark-mode img:first-child {
-  display: none;
-}
-.darkmode .dark-mode img:last-child {
-  display: block;
+.darkmode #jew img {
+  fill: #493d2f;
 }
 
 .navbar {
@@ -120,10 +114,10 @@ a {
   display: none;
 }
 
-.dark-mode img:first-child {
+.darkmode #jew img:first-child {
   display: none;
 }
 
-.dark-mode img:last-child {
+.darkmode #jew img:last-child {
   display: block;
 }/*# sourceMappingURL=style.css.map */
