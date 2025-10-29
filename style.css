@@ -4,37 +4,67 @@ body {
   padding: 0;
 }
 
-ul {
+.darkmode {
+  background-color: #5E503F;
+}
+.darkmode .navbar {
+  background-color: #493d2f;
+}
+.darkmode a {
+  color: #EAE0D5;
+}
+.darkmode a:hover {
+  background-color: #5E503F;
+  color: #EAE0D5;
+}
+.darkmode .dropdown-content {
+  background-color: #8f7a61;
+}
+.darkmode .dropdown-content a {
+  color: #EAE0D5;
+}
+.darkmode #jew img:last-child {
+  display: none;
+}
+.darkmode .dark-mode img:first-child {
+  display: none;
+}
+.darkmode .dark-mode img:last-child {
+  display: block;
+}
+
+.navbar {
+  background-color: #5E503F;
+  position: sticky;
+  height: 4.5em;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #5E503F;
-  padding-right: 10px;
+  padding-right: 25px;
+  padding-left: 25px;
+  color: #C6AC8F;
 }
 
-ul a {
+a {
   align-self: center;
-  color: #C6AC8F;
   text-decoration: none;
   font-size: 30px;
   padding-left: 25px;
+  color: #C6AC8F;
   padding-right: 25px;
+  transition: 300ms;
 }
 
-ul a:hover {
+.hover:hover {
   background-color: #EAE0D5;
   border-radius: 10px;
   color: #5E503F;
-}
-
-.f1 {
-  padding-left: 25px;
-  text-align: center;
-  color: #C6AC8F;
 }
 
 .dropbtn {
@@ -55,12 +85,45 @@ ul a:hover {
   height: auto;
 }
 
-.dropdown-content a:hover {
+.dropdown-content .hover:hover {
   align-self: center;
-  background-color: #C6AC8F;
+  background-color: #5E503F;
   color: #5E503F;
 }
 
 .dropdown.dropdown:hover .dropdown-content {
+  display: block;
+  transform: translateX(-19%);
+}
+
+#jew {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 30px;
+  top: 12px;
+}
+
+#jew img {
+  fill: #5E503F;
+}
+
+#jew img:last-child {
+  display: none;
+}
+
+.dark-mode img:first-child {
+  display: none;
+}
+
+.dark-mode img:last-child {
   display: block;
 }/*# sourceMappingURL=style.css.map */

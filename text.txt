@@ -1,14 +1,3 @@
-<div class="div">
-.div{
-    padding-left:25px;
-    padding-right:25px;
-    display:flex;
-    justify-self:end;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    font-size:25px;
-}
 Almond - EAE0D5
 Khaki - C6AC8F
 walnut brown - 5E503F

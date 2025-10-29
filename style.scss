@@ -1,41 +1,73 @@
-$color:	rgb(50, 205, 50);
 $color1: #EAE0D5;
 $color2:#C6AC8F;
 $color3:#5E503F;
+$color4:#493d2f;
+$color5:#8f7a61;
 body{
-    background-color: $color2;
-     margin: 0;
-  padding: 0;
+    background-color:$color2;
+    margin: 0;
+    padding: 0;
 }
-ul {
-    display:flex;
+
+.darkmode{
+    background-color:$color3;
+    .navbar{
+      background-color:$color4;
+}
+a{
+      color:$color1;
+}
+a:hover{
+  background-color:$color3;
+  color:$color1;
+}
+.dropdown-content{
+    background-color:$color5;
+    a{
+      color:$color1;
+    }
+}
+#jew img:last-child{
+  display:none;
+}
+.dark-mode img:first-child{
+  display:none;
+}
+.dark-mode img:last-child{
+  display:block; 
+}
+}
+
+.navbar{
+   background-color:$color3;
+   position:sticky;
+   height:4.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
     margin:0;
     padding:0;
     overflow: hidden;
-    background-color: $color3;
-    padding-right:10px;
-}
-ul a{
-    align-self: center;
+    padding-right:25px;
+    padding-left:25px;
     color:$color2;
+}
+a{
+    align-self: center;
     text-decoration: none;
     font-size:30px;
     padding-left:25px;
+      color:$color2;
     padding-right:25px;
+    transition: 300ms;
 }
-ul a:hover {
+.hover:hover {
   background-color:$color1;
   border-radius: 10px;
   color: $color3;
-}
-
-.f1{
-    padding-left:25px;
-    text-align: center;
-    color:$color2;
 }
 
 .dropbtn {
@@ -44,7 +76,6 @@ ul a:hover {
     text-decoration: none;
     font-size:30px;
     padding-right:30px;
-
 }
 .dropdown-content {
     display:none;
@@ -55,11 +86,41 @@ ul a:hover {
     width: 195px;
     height:auto;
 }
-.dropdown-content a:hover {
-align-self:center;
-  background-color: $color2;
+.dropdown-content .hover:hover {
+  align-self:center;
+  background-color: $color3;
   color: $color3;
 }
 .dropdown.dropdown:hover .dropdown-content {
   display: block;
+  transform:translateX(-19%);
+}
+
+#jew{
+  background-color:transparent;
+  border:none;
+  cursor:pointer;
+  height:50px;
+  width:50px;
+  padding:0;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:fixed;
+  right:30px;
+  top:12px;
+
+}
+#jew img{
+  fill:$color3
+}
+#jew img:last-child{
+  display:none;
+}
+.dark-mode img:first-child{
+  display:none;
+}
+.dark-mode img:last-child{
+  display:block; 
 }

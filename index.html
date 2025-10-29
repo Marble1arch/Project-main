@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main_page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-        <div class="cont">
-            <ul>
-                <li><h1 class="f1">The little recepie heaven</h1></li>
-                <div><a href="about_us">About us</a></div>
-                 <div><a href="#contact">Contact</a></div>
-                 <div class="dropdown">
-                    <a class="dropbtn">Menu</a>
-                        <div class="dropdown-content">
-                    <a href="#">Home</a>
-                    <a href="#">Recepies</a>
-                    <a href="#">Add recpies</a>
-                        </div>
-                </div>
-                <div>Dark \ light</div>
-            </ul>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="darkmode.js" defer></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div><a>The little recepie heaven</a></div>
+      <div><a class="hover" href="#about_us">About us</a></div>
+      <div><a class="hover" href="#contact">Contact</a></div>
+      <div class="dropdown">
+        <a class="hover" class="dropbtn">Menu</a>
+        <div class="dropdown-content">
+          <a class="hover" href="#">Home</a>
+          <a class="hover" href="#">Recepies</a>
+          <a class="hover" href="#">Add recpies</a>
         </div>
-</body>
+      </div>
+      <div class="toggle-switch">
+        <button id="jew">
+          <img src="Pictures/black.png" width:30px; height:30px />
+          <img src="Pictures/white.png" width:30px; height:30px />
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
