@@ -15,3 +15,9 @@ themeSwitch.addEventListener("click", () => {
     darkmode = localStorage.getItem("meow")
     darkmode !== "active" ? enableDarkmode() : disableDarkmode()
 })
+
+
+
+function Addingfunction(){
+    
+}

@@ -1,3 +1,17 @@
 Almond - EAE0D5
 Khaki - C6AC8F
 walnut brown - 5E503F
+
+function Addingfunction(){
+    
+}
+    function coordinate(event) {
+        let y = event.clientY;
+    if(y >= 875){
+    document.button.classList.remove("jew2")
+    document.button.classList.add("adding")
+}else{
+    document.button.classList.remove("adding")
+    document.button.classList.add("jew2")
+}
+}
