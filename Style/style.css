@@ -13,7 +13,7 @@ body {
 .darkmode a {
   color: #EAE0D5;
 }
-.darkmode a:hover {
+.darkmode .hover:hover {
   background-color: #5E503F;
   color: #EAE0D5;
 }
@@ -90,6 +90,10 @@ a {
   transform: translateX(-19%);
 }
 
+.hovermain:hover {
+  background-color: none;
+}
+
 #jew {
   background-color: transparent;
   border: none;
@@ -120,4 +124,57 @@ a {
 
 .darkmode #jew img:last-child {
   display: block;
+}
+
+#sun:hover {
+  animation-name: SunJump;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+}
+
+#moon:hover {
+  animation-name: MoonDip;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes SunJump {
+  0% {
+    transform: translateY(0%);
+  }
+  20% {
+    transform: translateY(-8%);
+  }
+  40% {
+    transform: translateY(-10%);
+  }
+  60% {
+    transform: translateY(-12%);
+  }
+  80% {
+    transform: translateY(-6%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes MoonDip {
+  0% {
+    transform: translateY(0%);
+  }
+  20% {
+    transform: translateY(8%);
+  }
+  40% {
+    transform: translateY(10%);
+  }
+  60% {
+    transform: translateY(12%);
+  }
+  80% {
+    transform: translateY(6%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -17,7 +17,7 @@ body{
 a{
       color:$color1;
 }
-a:hover{
+.hover:hover{
   background-color:$color3;
   color:$color1;
 }
@@ -101,7 +101,7 @@ a{
   display:flex;
   justify-content:center;
   align-items:center;
-  position:fixed;
+  position:sticky;
   right:30px;
   top:12px;
 
@@ -117,4 +117,48 @@ a{
 }
 .darkmode #jew img:last-child{
   display:block; 
+}
+
+#sun:hover {
+  animation-name: SunJump;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+}
+
+#moon:hover {
+  animation-name: MoonDip;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes SunJump {
+  0%   {transform:translateY(0%)}
+  20%   {transform:translateY(-8%)}
+  40%   {transform:translateY(-10%)}
+  60%   {transform:translateY(-12%)}
+  80%  {transform:translateY(-6%)}
+  100%  {transform:translateY(0%)}
+}
+
+@keyframes MoonDip {
+  0%   {transform:translateY(0%)}
+  20%   {transform:translateY(8%)}
+  40%   {transform:translateY(10%)}
+  60%   {transform:translateY(12%)}
+  80%  {transform:translateY(6%)}
+  100%  {transform:translateY(0%)}
+}
+
+
+.adding{
+  position: fixed;
+  top:93%;
+  left:96%;
+  right:0;
+  bottom:-10%;
+  border-radius: 25%;
+  border:none;
+  cursor: pointer;
+  height:60px;
+  width:60px;
 }

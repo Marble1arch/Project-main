@@ -1,0 +1,154 @@
+$color1: #EAE0D5;
+$color2:#C6AC8F;
+$color3:#5E503F;
+$color4:#493d2f;
+$color5:#8f7a61;
+body{
+    background-color:$color2;
+    margin: 0;
+    padding: 0;
+}
+
+.darkmode{
+    background-color:$color3;
+    .navbar{
+      background-color:$color4;
+}
+a{
+      color:$color1;
+}
+.hover:hover{
+  background-color:$color3;
+  color:$color1;
+}
+.dropdown-content{
+    background-color:$color5;
+    a{
+      color:$color1;
+    }
+}
+#jew img{
+  fill:$color4;
+}
+}
+
+.navbar{
+   background-color:$color3;
+   position:sticky;
+   height:4.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    padding-right:25px;
+    padding-left:25px;
+    color:$color2;
+}
+a{
+    align-self: center;
+    text-decoration: none;
+    font-size:30px;
+    padding-left:25px;
+      color:$color2;
+    padding-right:25px;
+    transition: 300ms;
+}
+.hover:hover {
+  background-color:$color1;
+  border-radius: 10px;
+  color: $color3;
+}
+
+.dropbtn {
+    align-self: center;
+    color:$color2;
+    text-decoration: none;
+    font-size:30px;
+    padding-right:30px;
+}
+.dropdown-content {
+    display:none;
+    border-radius:10px;
+    text-align: center;
+    position: fixed;
+    background-color: $color1;
+    width: 195px;
+    height:auto;
+}
+.dropdown-content .hover:hover {
+  align-self:center;
+  background-color: $color3;
+  color: $color3;
+}
+.dropdown.dropdown:hover .dropdown-content {
+  display: block;
+  transform:translateX(-19%);
+}
+.hovermain:hover{
+  background-color:none;
+}
+
+#jew{
+  background-color:transparent;
+  border:none;
+  cursor:pointer;
+  height:50px;
+  width:50px;
+  padding:0;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:fixed;
+  right:30px;
+  top:12px;
+
+}
+#jew img{
+  fill:$color3
+}
+#jew img:last-child{
+  display:none;
+}
+.darkmode #jew img:first-child{
+  display:none;
+}
+.darkmode #jew img:last-child{
+  display:block; 
+}
+
+#sun:hover {
+  animation-name: SunJump;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+}
+
+#moon:hover {
+  animation-name: MoonDip;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes SunJump {
+  0%   {transform:translateY(0%)}
+  20%   {transform:translateY(-8%)}
+  40%   {transform:translateY(-10%)}
+  60%   {transform:translateY(-12%)}
+  80%  {transform:translateY(-6%)}
+  100%  {transform:translateY(0%)}
+}
+
+@keyframes MoonDip {
+  0%   {transform:translateY(0%)}
+  20%   {transform:translateY(8%)}
+  40%   {transform:translateY(10%)}
+  60%   {transform:translateY(12%)}
+  80%  {transform:translateY(6%)}
+  100%  {transform:translateY(0%)}
+}
+
