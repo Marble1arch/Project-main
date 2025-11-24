@@ -1,4 +1,23 @@
 Almond - EAE0D5
 Khaki - C6AC8F
 walnut brown - 5E503F
-
+        // data insertion into json file
+    const fs = require('fs').promises;
+    const { readFile, writeFile } = require('fs').promises;
+        const newrecipe = {
+            title: recipename,
+            image: img,
+            description:desc
+        }
+        const Data = (newrecipe) => {
+            const finished = (error) => {
+                if(error){
+                    console.error(error)
+                    return;
+                }
+            }
+            const jsondata = JSON.stringify(newrecipe, null, 2)
+            fs.writeFile('Data.json', jsondata,finished)
+        }
+        Data(newrecipe)
+        //

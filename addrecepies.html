@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main_page</title>
-    <link rel="stylesheet" href="Style/style2.css" />
+    <link rel="stylesheet" href="Style/style.css" />
     <script type="text/javascript" src="meow.js" defer></script>
   </head>
   <body>
@@ -45,9 +45,19 @@
     </button>
     <div class="boxy" id="boxy">
       <div class="boxy-inner">
-        <form>
-          <label for="Recipe name" class="lab">Recipe title</label>
-          <input type="text" id="recipename" /><br />
+        <form id="data-form">
+          <label class="lab">Recipe title</label><br />
+          <input type="text" id="recipename" class="input" /><br />
+
+          <label class="lab">Image (optional)</label><br />
+          <input type="text" id="img" class="input" /><br />
+
+          <label class="lab">Recipe description</label><br />
+          <textarea
+            id="desc"
+            name="message"
+            placeholder="Write your recipe"
+          ></textarea>
         </form>
         <button class="submitbtn" id="close">Add recipe</button>
       </div>
