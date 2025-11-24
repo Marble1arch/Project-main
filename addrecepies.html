@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main_page</title>
-    <link rel="stylesheet" href="Style/style.css" />
+    <link rel="stylesheet" href="Style/style2.css" />
     <script type="text/javascript" src="meow.js" defer></script>
   </head>
   <body>
@@ -17,7 +17,7 @@
       <div class="dropdown">
         <a class="hover" class="dropbtn">Menu</a>
         <div class="dropdown-content">
-          <a class="hover" href="recepies.html">Recepies</a>
+          <a class="hover" href="recepies.php">Recepies</a>
           <a class="hover" href="addrecepies.html">Add recpies</a>
         </div>
       </div>
@@ -38,6 +38,18 @@
             height:30px
           />
         </button>
+      </div>
+    </div>
+    <button class="adding" id="open">
+      <img src="Pictures/add.png" />
+    </button>
+    <div class="boxy" id="boxy">
+      <div class="boxy-inner">
+        <form>
+          <label for="Recipe name" class="lab">Recipe title</label>
+          <input type="text" id="recipename" /><br />
+        </form>
+        <button class="submitbtn" id="close">Add recipe</button>
       </div>
     </div>
   </body>

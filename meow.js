@@ -18,6 +18,13 @@ themeSwitch.addEventListener("click", () => {
 
 
 
-function Addingfunction(){
-    
-}
+const openBtn = document.getElementById("open");
+const closeBtn = document.getElementById("close");
+const modal = document.getElementById("boxy");
+
+openBtn.addEventListener("click",() => {
+    modal.classList.add("open")
+})
+closeBtn.addEventListener("click",() => {
+    modal.classList.remove("open")
+})
