@@ -38,7 +38,10 @@ submitBtn.addEventListener("click", () => {
     const recipename = document.getElementById("recipename").value
     const img = document.getElementById("img").value
     const desc = document.getElementById("desc").value
+
+
     // reset form after submission
     document.getElementById("data-form").reset();
     //
+    // data insertion into json file :( very not cool
 });

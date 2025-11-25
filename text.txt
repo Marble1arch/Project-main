@@ -1,9 +1,28 @@
 Almond - EAE0D5
 Khaki - C6AC8F
 walnut brown - 5E503F
-        // data insertion into json file
-    const fs = require('fs').promises;
-    const { readFile, writeFile } = require('fs').promises;
+        // darkmode toggle
+let darkmode = localStorage.getItem("meow")
+const themeSwitch = document.getElementById("jew")
+
+const enableDarkmode = () => {
+    document.body.classList.add("darkmode")
+    localStorage.setItem("meow", "active")
+}
+const disableDarkmode = () =>{
+    document.body.classList.remove("darkmode")
+    localStorage.setItem("meow", null)
+}
+if(darkmode === "active") enableDarkmode()
+
+themeSwitch.addEventListener("click", () => {
+    darkmode = localStorage.getItem("meow")
+    darkmode !== "active" ? enableDarkmode() : disableDarkmode()
+})
+//
+
+// not cool code
+    const fs = require('fs')
         const newrecipe = {
             title: recipename,
             image: img,
@@ -16,8 +35,8 @@ walnut brown - 5E503F
                     return;
                 }
             }
-            const jsondata = JSON.stringify(newrecipe, null, 2)
-            fs.writeFile('Data.json', jsondata,finished)
+            const jsonData = JSON.stringify(newrecipe)
+            fs.writeFile('Data.json', jsonData,finished)
         }
         Data(newrecipe)
         //
