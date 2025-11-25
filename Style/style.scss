@@ -224,3 +224,27 @@ a{
   width:fit-content;
   align-self:center;
 }
+// phones and smaller devices
+@media only screen and (max-width: 600px) {
+
+}
+
+//tablets and bigger phones
+@media only screen and (min-width: 600px) {
+
+}
+
+//big tablets
+@media only screen and (min-width: 768px) {
+
+}
+
+//laptops and desktops
+@media only screen and (min-width: 992px) {
+
+}
+
+//Bigger screens then laptops
+@media only screen and (min-width: 1200px) {
+
+}
