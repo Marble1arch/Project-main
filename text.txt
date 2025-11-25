@@ -1,28 +1,32 @@
 Almond - EAE0D5
 Khaki - C6AC8F
 walnut brown - 5E503F
-        // darkmode toggle
-let darkmode = localStorage.getItem("meow")
-const themeSwitch = document.getElementById("jew")
 
-const enableDarkmode = () => {
-    document.body.classList.add("darkmode")
-    localStorage.setItem("meow", "active")
-}
-const disableDarkmode = () =>{
-    document.body.classList.remove("darkmode")
-    localStorage.setItem("meow", null)
-}
-if(darkmode === "active") enableDarkmode()
 
-themeSwitch.addEventListener("click", () => {
-    darkmode = localStorage.getItem("meow")
-    darkmode !== "active" ? enableDarkmode() : disableDarkmode()
-})
-//
+    recipe stuff
+        const apiUrl = `https://api.spoonacular.com/recipes/${recipe.id}/information?apiKey=${SPOONACULAR_API_KEY}`;
+    
+        const newrecipe = {
+        title: recipename,
+        image: img,
+        description: desc
+    }
+    
+    fetch('/api/recipes', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(newrecipe)
+    })
+    .then(response => response.json())
+    .then(data => console.log('Recipe saved:', data))
+    .catch(error => console.error('Error saving recipe:', error))
+    
 
-// not cool code
-    const fs = require('fs')
+
+  const fs = require('fs')
+       // not cool code
         const newrecipe = {
             title: recipename,
             image: img,
@@ -40,3 +44,10 @@ themeSwitch.addEventListener("click", () => {
         }
         Data(newrecipe)
         //
+
+            const recipename = document.getElementById("recipename").value
+    const img = document.getElementById("img").value
+    const desc = document.getElementById("desc").value
+
+    const data = { recipename,img,
+        desc}

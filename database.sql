@@ -1,0 +1,7 @@
+CREATE DATABASE datasavings;
+CREATE TABLE data (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    recepie VARCHAR(255) NOT NULL,
+    img VARCHAR(255) NOT NULL,
+    description VARCHAR(255) NOT NULL
+);
