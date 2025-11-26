@@ -65,6 +65,7 @@ a{
   background-color:$color1;
   border-radius: 10px;
   color: $color3;
+  text-decoration: none;
 }
 
 .dropbtn {
@@ -73,6 +74,7 @@ a{
     text-decoration: none;
     font-size:30px;
     padding-right:30px;
+    text-decoration: none;
 }
 .dropdown-content {
     display:none;
@@ -82,15 +84,18 @@ a{
     background-color: $color1;
     width: 195px;
     height:auto;
+    text-decoration: none;
 }
 .dropdown-content .hover:hover {
   align-self:center;
   background-color: $color3;
-  color: $color3;
+  color: $color2;
+  text-decoration: none;
 }
 .dropdown.dropdown:hover .dropdown-content {
   display: block;
   transform:translateX(-19%);
+  text-decoration: none;
 }
 //changing mode button
 #jew{
@@ -121,7 +126,7 @@ a{
 .darkmode #jew img:last-child{
   display:block; 
 }
-// hover animations
+// hover animations for darkmode button
 #sun:hover {
   animation-name: SunJump;
   animation-duration: 500ms;
@@ -227,7 +232,8 @@ a{
   border:none;
   border-radius: 5px;
   cursor: pointer;
-  width:fit-content;
+  width:100px;
+  height:50px;
   align-self:center;
 }
 // phones and smaller devices
