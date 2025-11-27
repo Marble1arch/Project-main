@@ -1,0 +1,70 @@
+.darkmode {
+  background-color: #5E503F;
+}
+.darkmode .navbar {
+  background-color: #493d2f;
+}
+.darkmode a {
+  color: #EAE0D5;
+}
+.darkmode .hover:hover {
+  background-color: #5E503F;
+  color: #EAE0D5;
+}
+.darkmode .dropdown-content {
+  background-color: #8f7a61;
+}
+.darkmode .dropdown-content a {
+  color: #EAE0D5;
+}
+.darkmode #jew img {
+  fill: #493d2f;
+}
+.darkmode .card {
+  background-color: #8f7a61;
+  color: #C6AC8F;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 300px;
+  border-radius: 5px;
+  height: auto;
+  max-height: 450px;
+  background-color: #493d2f;
+  color: #C6AC8F;
+  text-align: center;
+  border-radius: 5px;
+}
+.card img {
+  height: 250px;
+  width: 100%;
+  border-radius: 5px;
+}
+.card p {
+  font-size: 18px;
+  width: auto;
+  height: 100px;
+  overflow: auto;
+}
+.card .container {
+  padding: 2px 16px;
+}
+
+.container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  height: auto;
+  width: auto;
+}
+
+.card:hover {
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}/*# sourceMappingURL=style2.css.map */

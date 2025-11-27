@@ -38,6 +38,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main_page</title>
+    <link rel="stylesheet" href="Style/style2.css">
     <link rel="stylesheet" href="Style/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" defer></script>  
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" defer></script>
@@ -76,7 +77,7 @@
         </button>
       </div>
     </div>
-    <button class="adding" id="open">
+  <button class="adding" id="open">
       <img src="Pictures/add.png" />
     </button>
     <div class="boxy" id="boxy">
@@ -99,11 +100,11 @@
       <div class="container-cards">
         <?php 
         foreach($stuff as $items){
-          echo "<div class='card'>"."
+          echo "<div class="."card".">"."
           <img src=".$items['img']."/>"."
           <div class='container'>"."
           <h3 class='Recipe-title'>".$items['recipename']."</h3>"."
-          <p class='desc'".$items['desc']."</p>"."
+          <p class='desc'>".$items['desc']."</p>"."
           </div>"."
           </div>";
         }
