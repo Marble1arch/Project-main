@@ -2,43 +2,35 @@
  $message = '';  
  $error = '';  
  if(isset($_POST["submit"]))  
- {  
+{   
       if(empty($_POST["recipename"]))  
       {  
            $error = "<label class='text-danger'>Enter Name</label>";  
       }  
-      else if(empty($_POST["desc"]))  
-      {  
+      else if(empty($_POST["desc"]))  {  
            $error = "<label class='text-danger'>Enter Gender</label>";  
-      }  
-      else if(empty($_POST["img"]))  
+      }  else if(empty($_POST["img"]))  
       {  
            $error = "<label class='text-danger'>Enter Designation</label>";  
       }  
-      else  
-      {  
-           if(file_exists('Data.json'))  
-           {  
+      else  {  
+           if(file_exists('Data.json'))  {  
                 $current_data = file_get_contents('Data.json');  
                 $array_data = json_decode($current_data, true);  
                 $extra = array(  
-                     'recipename'               =>     $_POST['recipename'],  
-                     'desc'          =>     $_POST["desc"],  
-                     'img'     =>     $_POST["img"]  
+                     'recipename'=>$_POST['recipename'],  
+                     'desc'=>$_POST["desc"],  
+                     'img'=>$_POST["img"]  
                 );  
                 $array_data[] = $extra;  
                 $final_data = json_encode($array_data);  
-                if(file_put_contents('Data.json', $final_data))  
-                {  
-                     $message = "<label class='text-success'>File Appended Success fully</p>";  
-                }  
-           }  
-           else  
-           {  
-                $error = 'JSON File not exits';  
-           }  
+                if(file_put_contents('Data.json', $final_data)){
+                }
       }  
- }  
+ }
+}
+ $dates=file_get_contents('Data.json');
+  $stuff = json_decode($dates, true);
  ?>  
  <!DOCTYPE html>
 <html lang="en">
@@ -104,5 +96,19 @@
         </form>
       </div>
     </div>
+      <div class="container-cards">
+        <?php 
+        foreach($stuff as $items){
+          echo "<div class='card'>"."
+          <img src=".$items['img']."/>"."
+          <div class='container'>"."
+          <h3 class='Recipe-title'>".$items['recipename']."</h3>"."
+          <p class='desc'".$items['desc']."</p>"."
+          </div>"."
+          </div>";
+        }
+        
+        ?>
+        </div>
   </body>
 </html>

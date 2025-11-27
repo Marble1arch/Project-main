@@ -161,3 +161,6 @@ if(isset($_POST["submit"])){
     </div>
   </body>
 </html>
+                {  
+                     $message = "<label class='text-success'>File Appended Success fully</p>";  
+                }  
