@@ -35,11 +35,14 @@ a{
 }
 .card{
   background-color:$color6;
-  color:$color3;
+  color:black;
 }
 .aabout{
   background-color:$color6;
   color:$color1;
+}
+.buttoning{
+  color:black;
 }
 }
 
@@ -206,13 +209,18 @@ a{
 .tuff{
   text-align: center;
 }
-.about{
+.aboutt{
   display:flex;
   justify-content: center;
-.aabout{
+.aaboutt{
+  display:flex;
   text-align: center;
   background-color:$color2;
   color:$color3;
+  p{
+  font-size: 20px; 
+  font-weight: bold;
+  }
 }
 }
 //
