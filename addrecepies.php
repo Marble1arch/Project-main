@@ -83,7 +83,7 @@
     <div class="boxy" id="boxy">
       <div class="boxy-inner">
         <form method="post" id="data-form">
-            <label class="lab">Recipename</label>  </br />
+            <label class="lab">Recipe name</label>  </br />
             <input type="text" name="recipename" class="input" /><br />  
             <label class="lab">image (Link)</label>  </br />
             <input type="text" name="img" class="input" /><br />  
