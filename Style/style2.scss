@@ -44,6 +44,10 @@ a{
 .buttoning{
   color:black;
 }
+.look{
+  background-color:$color6;
+  color:$color3;
+}
 }
 
 //cards
@@ -203,6 +207,7 @@ a{
   background-color:$color2;
   color:$color3;
   width: fit-content;
+  border-radius: 15px;
 }
 //
 // about
@@ -212,14 +217,20 @@ a{
 .aboutt{
   display:flex;
   justify-content: center;
+  margin-top:15px;
+  flex-wrap: wrap;
 .aaboutt{
   display:flex;
   text-align: center;
-  background-color:$color2;
-  color:$color3;
+  background-color:$color3;
+  color:$color2;
+  flex-wrap: wrap;
+   border-radius: 15px;
+   flex-direction: column;
   p{
   font-size: 20px; 
   font-weight: bold;
+  margin:10px;
   }
 }
 }
