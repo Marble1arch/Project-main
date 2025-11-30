@@ -1,11 +1,11 @@
-$color1: #EAE0D5;
-$color2:#C6AC8F;
-$color3:#5E503F;
-$color4:#493d2f;
-$color5:#8f7a61;
+$color1: #d3d3d3;
+$color2:#4d4d4d;
+$color3:#9e9e9e;
+$color4:#383838;
+$color5:#918b85;
 // darkmode styles
 .darkmode{
-    background-color:$color3;
+    background-color:$color2;
     .navbar{
       background-color:$color4;
 }
@@ -29,6 +29,9 @@ a{
     background-color:$color5;
     color:$color2;
 }
+.forms{
+      background-color:$color2;
+}
 }
 
 //cards
@@ -37,8 +40,7 @@ a{
   transition: 0.3s;
   width: 300px;
   border-radius: 5px;
-  height:auto;
-  max-height: 450px;
+  height:450px;
   background-color:$color4;
   color:$color2;
   text-align: center;
@@ -72,4 +74,107 @@ a{
 .card:hover {
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.3);
   cursor:pointer;
+}
+.wrapping{
+  display:flex;
+  flex-wrap: nowrap;
+  flex-direction:row;
+  width:650px;
+  justify-content: space-between;
+}
+
+//contactform
+.contactform{
+  margin-top:200px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  .forms{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color:$color3;
+    width:550px;
+    height:550px;
+  }
+    textarea{
+    height:100px;
+    max-height:200px;
+    width:370px;
+  }
+  .input{
+    margin-top:10px;
+    margin-bottom:10px;
+    padding:10px;
+    border-radius: 5px;
+    width:350px;
+    height:auto;
+  }
+  label{
+    font-size:25px;
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+  h1,p,h2{
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+  .send{
+    width: 100px;
+    height:30px;
+    border-radius: 5px;
+    background-color:lightblue;
+    color:black;
+    border:none;
+    cursor: pointer;
+    align-self:center;
+  }
+}
+
+
+//
+// phones and smaller devices
+@media only screen and (max-width: 600px) {
+.wrapping{
+  flex-direction: column;
+  a{
+    font-size:20px;
+  }
+  width: 200px;
+}
+.navbar{
+  a{
+    font-size:20px;
+  }
+}
+.adding{
+  top: 93%;
+  left: 95%;
+  right: 0;
+  bottom:0;
+}
+.contactform{
+  margin-top:125px;
+}
+}
+//laptops and desktops
+@media only screen and (min-width: 992px) {
+.adding{
+  top: 93%;
+  left: 95%;
+  right: 0;
+  bottom:0;
+}
+}
+.wrapping{
+  justify-content: space-around;
+}
+//big tablets
+@media only screen and (min-width: 768px) {
+
+.adding{
+  top:93%;
+  left:90%;
+  bottom:0;
+  right:0;
+}
 }

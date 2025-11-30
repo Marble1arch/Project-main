@@ -38,7 +38,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main_page</title>
-    <link rel="stylesheet" href="Style/style2.css">
+        <link rel="stylesheet" href="Style/style2.css">
     <link rel="stylesheet" href="Style/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" defer></script>  
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" defer></script>
@@ -47,15 +47,17 @@
   <body>
     <div class="navbar">
       <div>
-        <a class="hovermain" href="index.html">The little recepie heaven</a>
+        <a class="hovermain" href="index.html">The Recipes</a>
       </div>
+      <div class="wrapping">
       <div><a class="hover" href="aboutus.html">About us</a></div>
       <div><a class="hover" href="contact.html">Contact</a></div>
+</div>
       <div class="dropdown">
         <a class="hover" class="dropbtn">Menu</a>
         <div class="dropdown-content">
-          <a class="hover" href="recepies.php">Recepies</a>
-          <a class="hover" href="addrecepies.php">Add recpies</a>
+          <a class="hover" href="recepies.php">Recipes</a>
+          <a class="hover" href="addrecepies.php">Add recipes</a>
         </div>
       </div>
       <div class="toggle-switch">
@@ -72,7 +74,7 @@
             alt="sun"
             id="sun"
             width:30px;
-            height:30px
+            height:30px;
           />
         </button>
       </div>
