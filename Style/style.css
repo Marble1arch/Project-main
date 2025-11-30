@@ -29,7 +29,7 @@ a {
   text-decoration: none;
   font-size: 30px;
   padding-left: 25px;
-  color: #000000;
+  color: #383838;
   padding-right: 25px;
   transition: 300ms;
 }
@@ -37,7 +37,7 @@ a {
 .hover:hover {
   background-color: #d3d3d3;
   border-radius: 10px;
-  color: #000000;
+  color: #383838;
   text-decoration: none;
 }
 
@@ -160,8 +160,8 @@ a {
 }
 .adding {
   position: fixed;
-  top: 90%;
-  left: 93.5%;
+  top: 93%;
+  left: 96.5%;
   right: 0;
   bottom: 0;
   border-radius: 25%;

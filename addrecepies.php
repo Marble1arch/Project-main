@@ -4,14 +4,12 @@
  if(isset($_POST["submit"]))  
 {   
       if(empty($_POST["recipename"]))  
-      {  
-           $error = "<label class='text-danger'>Enter Name</label>";  
-      }  
-      else if(empty($_POST["desc"]))  {  
-           $error = "<label class='text-danger'>Enter Gender</label>";  
-      }  else if(empty($_POST["img"]))  
-      {  
-           $error = "<label class='text-danger'>Enter Designation</label>";  
+      {
+        $error = 1;  
+      }  else if(empty($_POST["desc"]))  { 
+        $error=2; 
+      }  else if(empty($_POST["img"]))  {
+        $error = 3;  
       }  
       else  {  
            if(file_exists('Data.json'))  {  
@@ -103,7 +101,7 @@
         <?php 
         foreach($stuff as $items){
           echo "<div class="."card".">"."
-          <img src=".$items['img']."/>"."
+          <img src='".$items['img']."'/>"."
           <div class='container'>"."
           <h3 class='Recipe-title'>".$items['recipename']."</h3>"."
           <p class='desc'>".$items['desc']."</p>"."

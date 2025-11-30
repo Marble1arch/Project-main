@@ -27,6 +27,10 @@
 .darkmode .forms {
   background-color: #4d4d4d;
 }
+.darkmode .card {
+  background-color: #4d4d4d;
+  color: #9e9e9e;
+}
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -34,7 +38,7 @@
   width: 300px;
   border-radius: 5px;
   height: 450px;
-  background-color: #383838;
+  background-color: #918b85;
   color: #4d4d4d;
   text-align: center;
   border-radius: 5px;
@@ -138,9 +142,7 @@
   }
   .adding {
     top: 93%;
-    left: 95%;
-    right: 0;
-    bottom: 0;
+    left: 92%;
   }
   .contactform {
     margin-top: 125px;
@@ -160,8 +162,8 @@
 
 @media only screen and (min-width: 768px) {
   .adding {
-    top: 93%;
-    left: 90%;
+    top: 96%;
+    left: 94%;
     bottom: 0;
     right: 0;
   }
