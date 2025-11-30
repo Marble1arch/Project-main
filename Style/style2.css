@@ -12,7 +12,7 @@
   color: #d3d3d3;
 }
 .darkmode .dropdown-content {
-  background-color: #918b85;
+  background-color: #8b8b8b;
 }
 .darkmode .dropdown-content a {
   color: #d3d3d3;
@@ -21,7 +21,7 @@
   fill: #383838;
 }
 .darkmode .card {
-  background-color: #918b85;
+  background-color: #8b8b8b;
   color: #4d4d4d;
 }
 .darkmode .forms {
@@ -38,8 +38,8 @@
   width: 300px;
   border-radius: 5px;
   height: 450px;
-  background-color: #918b85;
-  color: #4d4d4d;
+  background-color: #8b8b8b;
+  color: black;
   text-align: center;
   border-radius: 5px;
 }
@@ -56,6 +56,30 @@
 }
 .card .container {
   padding: 2px 16px;
+}
+
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  height: auto;
+  width: auto;
+}
+.container-card .cards {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 300px;
+  border-radius: 5px;
+  margin-top: 50px;
+  height: 250px;
+  background-color: #8b8b8b;
+  color: black;
+  text-align: center;
+  border-radius: 5px;
 }
 
 .container-cards {
@@ -127,6 +151,53 @@
   border: none;
   cursor: pointer;
   align-self: center;
+}
+
+.greedy {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.greedy2 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.greedy2 p {
+  font-size: 20px;
+  width: 350px;
+}
+
+.buttoning {
+  background-color: lightskyblue;
+  border-radius: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-content: baseline;
+}
+
+.landing {
+  width: 550px;
+  height: 425px;
+  border-radius: 15px;
+}
+
+.look {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #4d4d4d;
+  color: #9e9e9e;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.tuff {
+  text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
