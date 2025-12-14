@@ -3,7 +3,15 @@
  $error = '';  
  if(isset($_POST["submit"]))  
 {   
-
+ if(empty($_POST["recipename"]))  
+      {
+        $error = 1;  
+      }  else if(empty($_POST["desc"]))  { 
+        $error=2; 
+      }  else if(empty($_POST["img"]))  {
+        $error = 3;  
+      }  
+      else  {  
            if(file_exists('Data.json'))  {  
                 $current_data = file_get_contents('Data.json');  
                 $array_data = json_decode($current_data, true);  
@@ -17,6 +25,7 @@
                 if(file_put_contents('Data.json', $final_data)){
                 }
       }  
+    }
  }
  $dates=file_get_contents('Data.json');
   $stuff = json_decode($dates, true);
